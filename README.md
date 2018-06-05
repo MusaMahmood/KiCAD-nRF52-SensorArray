@@ -1,0 +1,1 @@
+# KiCAD-nRF52-SensorArray
