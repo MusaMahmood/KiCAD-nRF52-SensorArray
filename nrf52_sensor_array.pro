@@ -1,4 +1,4 @@
-update=5/10/2018 2:56:56 PM
+update=6/5/2018 10:56:45 AM
 version=1
 last_client=kicad
 [general]
@@ -27,9 +27,19 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=C:/Users/mmahmood31/Downloads/plot/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=
+LibDir=../libs_common
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -68,13 +78,4 @@ LibName34=libs/texas_ads1299
 LibName35=libs/texas_TPS6122x
 LibName36=libs/texas_TPS61222
 LibName37=libs/EEG_ADS1299_2-cache
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/mmahmood31/Downloads/plot/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName38=bioreactor
