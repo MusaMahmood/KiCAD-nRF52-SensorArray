@@ -1843,6 +1843,19 @@ Wire Wire Line
 	16150 8900 16150 9150
 Connection ~ 16150 8900
 Connection ~ 16150 9150
-Text GLabel 16350 9150 2    60   Input ~ 0
+$Comp
+L C N1
+U 1 1 5B1DC489
+P 16500 9150
+F 0 "N1" H 16550 9250 40  0000 L CNN
+F 1 "N.C." H 16506 9065 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 16538 9000 30  0001 C CNN
+F 3 "~" H 16500 9150 60  0000 C CNN
+	1    16500 9150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16650 9150 16850 9150
+Text GLabel 16850 9150 2    60   Input ~ 0
 AVSS
 $EndSCHEMATC
