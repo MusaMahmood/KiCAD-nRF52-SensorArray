@@ -1811,4 +1811,38 @@ Wire Wire Line
 	10500 11250 10150 11250
 Wire Wire Line
 	12100 10850 12600 10850
+$Comp
+L CONN_2 P4
+U 1 1 5B1D9853
+P 14950 8800
+F 0 "P4" V 14900 8800 40  0000 C CNN
+F 1 "CONN_2" V 15000 8800 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 14950 8800 60  0001 C CNN
+F 3 "" H 14950 8800 60  0000 C CNN
+	1    14950 8800
+	-1   0    0    -1  
+$EndComp
+Text Label 16450 8650 0    60   ~ 0
+meas_REFERENCE
+Wire Wire Line
+	15300 8700 16450 8700
+Wire Wire Line
+	16450 8700 16450 8650
+Wire Wire Line
+	15300 8900 16450 8900
+Wire Wire Line
+	16450 8900 16450 8850
+Text Label 16450 8850 0    60   ~ 0
+meas_REFERENCE
+Wire Wire Line
+	16000 8700 16000 9150
+Wire Wire Line
+	16000 9150 16350 9150
+Connection ~ 16000 8700
+Wire Wire Line
+	16150 8900 16150 9150
+Connection ~ 16150 8900
+Connection ~ 16150 9150
+Text GLabel 16350 9150 2    60   Input ~ 0
+AVSS
 $EndSCHEMATC
