@@ -885,6 +885,207 @@ F 3 "~" H 13350 7550 60  0000 C CNN
 $EndComp
 Text GLabel 13350 7750 3    60   Input ~ 0
 AVSS
+Text GLabel 13950 6800 2    60   Input ~ 0
+DGND
+NoConn ~ 11700 8000
+NoConn ~ 11500 8000
+Text Label 12650 7500 0    60   ~ 0
+m1_D_out
+Text Label 12650 8050 0    60   ~ 0
+m2_D_out
+Text Label 12650 8350 0    60   ~ 0
+m3_D_out
+Text Label 12650 8550 0    60   ~ 0
+meas_REFERENCE
+Text Label 20500 5100 0    60   ~ 0
+SPI_~CS
+Text Label 5850 10950 0    60   ~ 0
+ctr_m1_a0
+Text Label 5850 10850 0    60   ~ 0
+ctr_m1_a1
+Text Label 5850 10550 0    60   ~ 0
+ctr_m1_a2
+Text Label 5850 10450 0    60   ~ 0
+ctr_m1_a3
+Text GLabel 8950 9950 1    60   Input ~ 0
+AVSS
+Text GLabel 8500 9850 1    60   Input ~ 0
+AVDD
+$Comp
+L ADG1606 MUX2
+U 1 1 5B1D6800
+P 7450 10700
+F 0 "MUX2" H 7450 10700 60  0000 C CNN
+F 1 "ADG1606" H 7450 10600 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 7450 10700 60  0001 C CNN
+F 3 "" H 7450 10700 60  0001 C CNN
+	1    7450 10700
+	0    1    1    0   
+$EndComp
+Text GLabel 8600 11150 3    60   Input ~ 0
+AVSS
+NoConn ~ 8250 10950
+NoConn ~ 8250 10850
+NoConn ~ 8250 10750
+NoConn ~ 8250 10550
+NoConn ~ 8250 10350
+Text GLabel 7000 11600 3    60   Input ~ 0
+AVSS
+Text GLabel 6400 10200 1    60   Input ~ 0
+AVSS
+$Comp
+L C C11
+U 1 1 5B1D680E
+P 8700 10200
+F 0 "C11" H 8750 10300 40  0000 L CNN
+F 1 "4.7uF" H 8706 10115 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 8738 10050 30  0001 C CNN
+F 3 "~" H 8700 10200 60  0000 C CNN
+	1    8700 10200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X08 J3
+U 1 1 5B1D6814
+P 7450 9250
+F 0 "J3" H 7450 9700 50  0000 C CNN
+F 1 "CONN_01X08" V 7550 9250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7450 9250 50  0001 C CNN
+F 3 "" H 7450 9250 50  0001 C CNN
+	1    7450 9250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X08 J4
+U 1 1 5B1D681A
+P 7450 12050
+F 0 "J4" H 7450 12500 50  0000 C CNN
+F 1 "CONN_01X08" V 7550 12050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7450 12050 50  0001 C CNN
+F 3 "" H 7450 12050 50  0001 C CNN
+	1    7450 12050
+	0    1    1    0   
+$EndComp
+NoConn ~ 6650 10750
+NoConn ~ 6650 10650
+Text GLabel 6300 11050 0    60   Input ~ 0
+AVDD
+Text Label 8750 10650 0    60   ~ 0
+m2_D_out
+Text Label 9700 11150 0    60   ~ 0
+ctr_m1_a0
+Text Label 9700 11050 0    60   ~ 0
+ctr_m1_a1
+Text Label 9700 10750 0    60   ~ 0
+ctr_m1_a2
+Text Label 9700 10650 0    60   ~ 0
+ctr_m1_a3
+Text GLabel 12800 10150 1    60   Input ~ 0
+AVSS
+Text GLabel 12350 10050 1    60   Input ~ 0
+AVDD
+$Comp
+L ADG1606 MUX3
+U 1 1 5B1D6E24
+P 11300 10900
+F 0 "MUX3" H 11300 10900 60  0000 C CNN
+F 1 "ADG1606" H 11300 10800 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 11300 10900 60  0001 C CNN
+F 3 "" H 11300 10900 60  0001 C CNN
+	1    11300 10900
+	0    1    1    0   
+$EndComp
+Text GLabel 12450 11350 3    60   Input ~ 0
+AVSS
+NoConn ~ 12100 11150
+NoConn ~ 12100 11050
+NoConn ~ 12100 10950
+NoConn ~ 12100 10750
+NoConn ~ 12100 10550
+Text GLabel 10850 11800 3    60   Input ~ 0
+AVSS
+Text GLabel 10250 10400 1    60   Input ~ 0
+AVSS
+$Comp
+L C C12
+U 1 1 5B1D6E32
+P 12550 10400
+F 0 "C12" H 12600 10500 40  0000 L CNN
+F 1 "4.7uF" H 12556 10315 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 12588 10250 30  0001 C CNN
+F 3 "~" H 12550 10400 60  0000 C CNN
+	1    12550 10400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X08 J5
+U 1 1 5B1D6E38
+P 11300 9450
+F 0 "J5" H 11300 9900 50  0000 C CNN
+F 1 "CONN_01X08" V 11400 9450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 11300 9450 50  0001 C CNN
+F 3 "" H 11300 9450 50  0001 C CNN
+	1    11300 9450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X08 J6
+U 1 1 5B1D6E3E
+P 11300 12250
+F 0 "J6" H 11300 12700 50  0000 C CNN
+F 1 "CONN_01X08" V 11400 12250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 11300 12250 50  0001 C CNN
+F 3 "" H 11300 12250 50  0001 C CNN
+	1    11300 12250
+	0    1    1    0   
+$EndComp
+NoConn ~ 10500 10950
+NoConn ~ 10500 10850
+Text GLabel 10150 11250 0    60   Input ~ 0
+AVDD
+$Comp
+L CONN_2 P4
+U 1 1 5B1D9853
+P 14950 8800
+F 0 "P4" V 14900 8800 40  0000 C CNN
+F 1 "CONN_2" V 15000 8800 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 14950 8800 60  0001 C CNN
+F 3 "" H 14950 8800 60  0000 C CNN
+	1    14950 8800
+	-1   0    0    -1  
+$EndComp
+Text Label 16450 8650 0    60   ~ 0
+meas_REFERENCE
+Text Label 16450 8850 0    60   ~ 0
+meas_REFERENCE
+Text GLabel 16850 9150 2    60   Input ~ 0
+AVSS
+$Comp
+L CONN_2 P5
+U 1 1 5B1EBE6E
+P 4000 6950
+F 0 "P5" V 3950 6950 40  0000 C CNN
+F 1 "CONN_2" V 4050 6950 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4000 6950 60  0001 C CNN
+F 3 "" H 4000 6950 60  0000 C CNN
+	1    4000 6950
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4650 6850 2    60   Input ~ 0
+DVDD
+Text GLabel 4650 7050 2    60   Input ~ 0
+DGND
+$Comp
+L R R2
+U 1 1 5B1F2F7B
+P 12700 11050
+F 0 "R2" V 12780 11050 50  0000 C CNN
+F 1 "2k" V 12700 11050 50  0000 C CNN
+F 2 "" V 12630 11050 50  0001 C CNN
+F 3 "" H 12700 11050 50  0001 C CNN
+	1    12700 11050
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
 	22100 4800 20400 4800
 Wire Wire Line
@@ -1501,16 +1702,10 @@ Wire Wire Line
 Connection ~ 13350 6800
 Wire Wire Line
 	13800 6800 13950 6800
-Text GLabel 13950 6800 2    60   Input ~ 0
-DGND
-NoConn ~ 11700 8000
-NoConn ~ 11500 8000
 Wire Wire Line
 	12400 7500 12650 7500
 Wire Wire Line
 	10800 7500 10500 7500
-Text Label 12650 7500 0    60   ~ 0
-m1_D_out
 Wire Wire Line
 	11900 8000 11900 8050
 Wire Wire Line
@@ -1523,91 +1718,10 @@ Wire Wire Line
 	10500 7500 10500 8550
 Wire Wire Line
 	10500 8550 12650 8550
-Text Label 12650 8050 0    60   ~ 0
-m2_D_out
-Text Label 12650 8350 0    60   ~ 0
-m3_D_out
-Text Label 12650 8550 0    60   ~ 0
-meas_REFERENCE
-Text Label 20500 5100 0    60   ~ 0
-SPI_~CS
 Wire Wire Line
 	22250 5100 20500 5100
 Wire Wire Line
 	22150 4900 20400 4900
-Text Label 5850 10950 0    60   ~ 0
-ctr_m1_a0
-Text Label 5850 10850 0    60   ~ 0
-ctr_m1_a1
-Text Label 5850 10550 0    60   ~ 0
-ctr_m1_a2
-Text Label 5850 10450 0    60   ~ 0
-ctr_m1_a3
-Text GLabel 8950 9950 1    60   Input ~ 0
-AVSS
-Text GLabel 8500 9850 1    60   Input ~ 0
-AVDD
-$Comp
-L ADG1606 MUX2
-U 1 1 5B1D6800
-P 7450 10700
-F 0 "MUX2" H 7450 10700 60  0000 C CNN
-F 1 "ADG1606" H 7450 10600 60  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 7450 10700 60  0001 C CNN
-F 3 "" H 7450 10700 60  0001 C CNN
-	1    7450 10700
-	0    1    1    0   
-$EndComp
-Text GLabel 8600 11150 3    60   Input ~ 0
-AVSS
-NoConn ~ 8250 10950
-NoConn ~ 8250 10850
-NoConn ~ 8250 10750
-NoConn ~ 8250 10550
-NoConn ~ 8250 10350
-Text GLabel 7000 11600 3    60   Input ~ 0
-AVSS
-Text GLabel 6400 10200 1    60   Input ~ 0
-AVSS
-$Comp
-L C C11
-U 1 1 5B1D680E
-P 8700 10200
-F 0 "C11" H 8750 10300 40  0000 L CNN
-F 1 "4.7uF" H 8706 10115 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 8738 10050 30  0001 C CNN
-F 3 "~" H 8700 10200 60  0000 C CNN
-	1    8700 10200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X08 J3
-U 1 1 5B1D6814
-P 7450 9250
-F 0 "J3" H 7450 9700 50  0000 C CNN
-F 1 "CONN_01X08" V 7550 9250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7450 9250 50  0001 C CNN
-F 3 "" H 7450 9250 50  0001 C CNN
-	1    7450 9250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X08 J4
-U 1 1 5B1D681A
-P 7450 12050
-F 0 "J4" H 7450 12500 50  0000 C CNN
-F 1 "CONN_01X08" V 7550 12050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7450 12050 50  0001 C CNN
-F 3 "" H 7450 12050 50  0001 C CNN
-	1    7450 12050
-	0    1    1    0   
-$EndComp
-NoConn ~ 6650 10750
-NoConn ~ 6650 10650
-Text GLabel 6300 11050 0    60   Input ~ 0
-AVDD
-Text Label 8750 10650 0    60   ~ 0
-m2_D_out
 Wire Wire Line
 	8250 11050 8600 11050
 Wire Wire Line
@@ -1673,81 +1787,8 @@ Wire Wire Line
 	6650 11050 6300 11050
 Wire Wire Line
 	8250 10650 8750 10650
-Text Label 9700 11150 0    60   ~ 0
-ctr_m1_a0
-Text Label 9700 11050 0    60   ~ 0
-ctr_m1_a1
-Text Label 9700 10750 0    60   ~ 0
-ctr_m1_a2
-Text Label 9700 10650 0    60   ~ 0
-ctr_m1_a3
-Text GLabel 12800 10150 1    60   Input ~ 0
-AVSS
-Text GLabel 12350 10050 1    60   Input ~ 0
-AVDD
-$Comp
-L ADG1606 MUX3
-U 1 1 5B1D6E24
-P 11300 10900
-F 0 "MUX3" H 11300 10900 60  0000 C CNN
-F 1 "ADG1606" H 11300 10800 60  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 11300 10900 60  0001 C CNN
-F 3 "" H 11300 10900 60  0001 C CNN
-	1    11300 10900
-	0    1    1    0   
-$EndComp
-Text GLabel 12450 11350 3    60   Input ~ 0
-AVSS
-NoConn ~ 12100 11150
-NoConn ~ 12100 11050
-NoConn ~ 12100 10950
-NoConn ~ 12100 10750
-NoConn ~ 12100 10550
-Text GLabel 10850 11800 3    60   Input ~ 0
-AVSS
-Text GLabel 10250 10400 1    60   Input ~ 0
-AVSS
-$Comp
-L C C12
-U 1 1 5B1D6E32
-P 12550 10400
-F 0 "C12" H 12600 10500 40  0000 L CNN
-F 1 "4.7uF" H 12556 10315 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 12588 10250 30  0001 C CNN
-F 3 "~" H 12550 10400 60  0000 C CNN
-	1    12550 10400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X08 J5
-U 1 1 5B1D6E38
-P 11300 9450
-F 0 "J5" H 11300 9900 50  0000 C CNN
-F 1 "CONN_01X08" V 11400 9450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 11300 9450 50  0001 C CNN
-F 3 "" H 11300 9450 50  0001 C CNN
-	1    11300 9450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X08 J6
-U 1 1 5B1D6E3E
-P 11300 12250
-F 0 "J6" H 11300 12700 50  0000 C CNN
-F 1 "CONN_01X08" V 11400 12250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 11300 12250 50  0001 C CNN
-F 3 "" H 11300 12250 50  0001 C CNN
-	1    11300 12250
-	0    1    1    0   
-$EndComp
-NoConn ~ 10500 10950
-NoConn ~ 10500 10850
-Text GLabel 10150 11250 0    60   Input ~ 0
-AVDD
-Text Label 12600 10850 0    60   ~ 0
-m3_D_out
 Wire Wire Line
-	12100 11250 12450 11250
+	12100 11250 12700 11250
 Wire Wire Line
 	12450 11250 12450 11350
 Wire Wire Line
@@ -1810,20 +1851,7 @@ Wire Wire Line
 Wire Wire Line
 	10500 11250 10150 11250
 Wire Wire Line
-	12100 10850 12600 10850
-$Comp
-L CONN_2 P4
-U 1 1 5B1D9853
-P 14950 8800
-F 0 "P4" V 14900 8800 40  0000 C CNN
-F 1 "CONN_2" V 15000 8800 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 14950 8800 60  0001 C CNN
-F 3 "" H 14950 8800 60  0000 C CNN
-	1    14950 8800
-	-1   0    0    -1  
-$EndComp
-Text Label 16450 8650 0    60   ~ 0
-meas_REFERENCE
+	12100 10850 12850 10850
 Wire Wire Line
 	15300 8700 16450 8700
 Wire Wire Line
@@ -1832,30 +1860,29 @@ Wire Wire Line
 	15300 8900 16450 8900
 Wire Wire Line
 	16450 8900 16450 8850
-Text Label 16450 8850 0    60   ~ 0
-meas_REFERENCE
 Wire Wire Line
 	16000 8700 16000 9150
 Wire Wire Line
-	16000 9150 16350 9150
+	16000 9150 16850 9150
 Connection ~ 16000 8700
 Wire Wire Line
 	16150 8900 16150 9150
 Connection ~ 16150 8900
 Connection ~ 16150 9150
-$Comp
-L C N1
-U 1 1 5B1DC489
-P 16500 9150
-F 0 "N1" H 16550 9250 40  0000 L CNN
-F 1 "N.C." H 16506 9065 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 16538 9000 30  0001 C CNN
-F 3 "~" H 16500 9150 60  0000 C CNN
-	1    16500 9150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	16650 9150 16850 9150
-Text GLabel 16850 9150 2    60   Input ~ 0
-AVSS
+	4350 6850 4650 6850
+Wire Wire Line
+	4350 7050 4650 7050
+Wire Wire Line
+	12700 10850 12700 10900
+Wire Wire Line
+	12700 11250 12700 11200
+Connection ~ 12450 11250
+Connection ~ 12700 10850
+Text Label 12850 10850 0    60   ~ 0
+m3_D_out
+Text Notes 12750 11250 0    60   ~ 0
+Voltage divider
+Text Notes 12400 10750 0    60   ~ 0
+From Temp sensors
 $EndSCHEMATC
