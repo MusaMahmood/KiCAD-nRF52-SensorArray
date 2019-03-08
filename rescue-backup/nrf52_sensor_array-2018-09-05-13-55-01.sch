@@ -1,6 +1,44 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:conn1
+LIBS:emg_circuit_2_ext_amp-cache
+LIBS:emg_circuit_2_ext_amp-rescue
+LIBS:Johanson
+LIBS:texas_ads1299
+LIBS:texas_TPS6122x
+LIBS:texas_TPS61222
+LIBS:EEG_ADS1299_2-cache
+LIBS:bioreactor
 LIBS:nrf52_sensor_array-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
@@ -19,7 +57,7 @@ Text Label 20500 5500 0    60   ~ 0
 Text Label 20500 5200 0    60   ~ 0
 SPI_SCLK
 $Comp
-L conn1:CHIP-ANT A1
+L CHIP-ANT A1
 U 1 1 588ADF49
 P 29800 3850
 F 0 "A1" H 29800 4000 60  0000 C CNN
@@ -30,7 +68,7 @@ F 3 "" H 29800 3850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn1:INDUCTOR L6
+L INDUCTOR L6
 U 1 1 588ADF4A
 P 29450 4000
 F 0 "L6" V 29400 4000 40  0000 C CNN
@@ -41,7 +79,7 @@ F 3 "~" H 29450 4000 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn1:INDUCTOR L5
+L INDUCTOR L5
 U 1 1 588ADF4B
 P 29100 4350
 F 0 "L5" V 29050 4350 40  0000 C CNN
@@ -52,7 +90,7 @@ F 3 "~" H 29100 4350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C30
+L C C30
 U 1 1 588ADF4C
 P 28850 4000
 F 0 "C30" H 28850 4100 40  0000 L CNN
@@ -65,7 +103,7 @@ $EndComp
 Text Notes 28400 3600 0    60   ~ 0
 This network will need to be tuned
 $Comp
-L conn1:GND-RESCUE-emg_circuit_2_ext_amp #PWR1
+L GND-RESCUE-emg_circuit_2_ext_amp #PWR1
 U 1 1 588ADF4E
 P 2450 7150
 F 0 "#PWR1" H 2450 7150 30  0001 C CNN
@@ -78,7 +116,7 @@ $EndComp
 Text Label 2700 7600 0    60   ~ 0
 SWDCLK
 $Comp
-L conn1:CONN_2 P1
+L CONN_2 P1
 U 1 1 588ADF51
 P 2000 6900
 F 0 "P1" V 1950 6900 40  0000 C CNN
@@ -91,7 +129,7 @@ $EndComp
 Text Notes 1450 6500 0    60   ~ 0
 No reverse polarity protection;\nuse caution and do not connect\nbattery and debugger at same time!
 $Comp
-L conn1:CONN_2 P2
+L CONN_2 P2
 U 1 1 588ADF5E
 P 2000 7700
 F 0 "P2" V 1950 7700 40  0000 C CNN
@@ -106,7 +144,7 @@ Remember to Annotate
 Text Notes 14550 2750 0    60   ~ 0
 Vreg for 5.0V out
 $Comp
-L conn1:INDUCTOR L2
+L INDUCTOR L2
 U 1 1 589975A4
 P 16150 3350
 F 0 "L2" V 16100 3350 40  0000 C CNN
@@ -117,7 +155,7 @@ F 3 "~" H 16150 3350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C3
+L C C3
 U 1 1 589975B4
 P 13400 2800
 F 0 "C3" H 13400 2900 40  0000 L CNN
@@ -128,7 +166,7 @@ F 3 "~" H 13400 2800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn1:GND-RESCUE-emg_circuit_2_ext_amp #PWR6
+L GND-RESCUE-emg_circuit_2_ext_amp #PWR6
 U 1 1 589975BD
 P 13400 3250
 F 0 "#PWR6" H 13400 3250 30  0001 C CNN
@@ -139,7 +177,7 @@ F 3 "" H 13400 3250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C13
+L C C13
 U 1 1 589975C4
 P 16500 4150
 F 0 "C13" H 16500 4250 40  0000 L CNN
@@ -150,7 +188,7 @@ F 3 "~" H 16500 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L texas_TPS61222:TPS61222 U2
+L TPS61222 U2
 U 1 1 589981DF
 P 14950 3350
 F 0 "U2" H 14950 3250 60  0000 C CNN
@@ -161,7 +199,7 @@ F 3 "" H 14950 3350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L EEG_ADS1299_2-cache:LED-RESCUE-EEG_ADS1299_2 D1
+L LED-RESCUE-EEG_ADS1299_2 D1
 U 1 1 58A69B25
 P 24200 1700
 F 0 "D1" H 24200 1800 50  0000 C CNN
@@ -172,7 +210,7 @@ F 3 "" H 24200 1700 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VCC #PWR4
+L VCC #PWR4
 U 1 1 58A71443
 P 10000 1350
 F 0 "#PWR4" H 10000 1450 30  0001 C CNN
@@ -199,7 +237,7 @@ DOUT
 Text Label 20500 5300 0    60   ~ 0
 DIN
 $Comp
-L conn1:GND-RESCUE-emg_circuit_2_ext_amp #PWR7
+L GND-RESCUE-emg_circuit_2_ext_amp #PWR7
 U 1 1 58B4A72D
 P 13900 4050
 F 0 "#PWR7" H 13900 4050 30  0001 C CNN
@@ -214,7 +252,7 @@ AVSS
 Text GLabel 23800 1700 0    60   Input ~ 0
 DVDD
 $Comp
-L EEG_ADS1299_2-cache:NRF528XX-QFAA-RESCUE-EEG_ADS1299_2 U3
+L NRF528XX-QFAA-RESCUE-EEG_ADS1299_2 U3
 U 1 1 597FEAA6
 P 23850 4500
 F 0 "U3" H 23850 4250 60  0000 C CNN
@@ -231,7 +269,7 @@ DGND
 Text Label 28200 4000 0    60   ~ 0
 RF
 $Comp
-L Device:Crystal X2
+L Crystal X2
 U 1 1 5980527C
 P 22050 4150
 F 0 "X2" H 22050 4300 50  0000 C CNN
@@ -242,7 +280,7 @@ F 3 "" H 22050 4150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C28
+L C C28
 U 1 1 59805BFF
 P 21500 4000
 F 0 "C28" H 21525 4100 50  0000 L CNN
@@ -253,7 +291,7 @@ F 3 "" H 21500 4000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C29
+L C C29
 U 1 1 59806395
 P 21500 4250
 F 0 "C29" H 21525 4350 50  0000 L CNN
@@ -270,7 +308,7 @@ SWDCLK
 Text Label 25450 5400 1    60   ~ 0
 SWDIO
 $Comp
-L Device:Crystal_GND24 X1
+L Crystal_GND24 X1
 U 1 1 598095F5
 P 25500 3750
 F 0 "X1" H 25625 3950 50  0000 L CNN
@@ -281,7 +319,7 @@ F 3 "" H 25500 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C24
+L C C24
 U 1 1 5980A64F
 P 25450 3300
 F 0 "C24" H 25475 3400 50  0000 L CNN
@@ -294,7 +332,7 @@ $EndComp
 Text GLabel 25500 4100 2    60   Input ~ 0
 DGND
 $Comp
-L Device:C C25
+L C C25
 U 1 1 5980B705
 P 25950 3750
 F 0 "C25" H 25975 3850 50  0000 L CNN
@@ -309,7 +347,7 @@ DGND
 Text GLabel 23700 2750 2    60   Input ~ 0
 DGND
 $Comp
-L Device:C C22
+L C C22
 U 1 1 5980CF43
 P 23300 6650
 F 0 "C22" H 23325 6750 50  0000 L CNN
@@ -322,7 +360,7 @@ $EndComp
 Text GLabel 23300 6900 3    60   Input ~ 0
 DGND
 $Comp
-L Device:C C33
+L C C33
 U 1 1 5980D3F1
 P 25050 3600
 F 0 "C33" H 25075 3700 50  0000 L CNN
@@ -339,7 +377,7 @@ VDD_nRF
 Text Label 25050 3800 1    60   ~ 0
 VDD_nRF
 $Comp
-L Device:C C21
+L C C21
 U 1 1 5980E790
 P 23300 2700
 F 0 "C21" H 23325 2800 50  0000 L CNN
@@ -354,7 +392,7 @@ VDD_nRF
 Text GLabel 23300 2450 2    60   Input ~ 0
 DGND
 $Comp
-L conn1:INDUCTOR L4
+L INDUCTOR L4
 U 1 1 598106A2
 P 24100 2450
 F 0 "L4" V 24050 2450 40  0000 C CNN
@@ -365,7 +403,7 @@ F 3 "~" H 24100 2450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn1:INDUCTOR L3
+L INDUCTOR L3
 U 1 1 59810E4A
 P 24850 2450
 F 0 "L3" V 24800 2450 40  0000 C CNN
@@ -376,7 +414,7 @@ F 3 "~" H 24850 2450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C23
+L C C23
 U 1 1 59811F52
 P 25450 2450
 F 0 "C23" H 25475 2550 50  0000 L CNN
@@ -395,7 +433,7 @@ DEC2
 Text Label 22300 3900 0    60   ~ 0
 DEC1
 $Comp
-L Device:C C26
+L C C26
 U 1 1 59819979
 P 27300 2500
 F 0 "C26" H 27325 2600 50  0000 L CNN
@@ -410,7 +448,7 @@ DEC1
 Text GLabel 27300 2800 3    60   Input ~ 0
 DGND
 $Comp
-L Device:C C27
+L C C27
 U 1 1 59819FCC
 P 27850 2500
 F 0 "C27" H 27875 2600 50  0000 L CNN
@@ -425,7 +463,7 @@ DEC2
 Text GLabel 27850 2800 3    60   Input ~ 0
 DGND
 $Comp
-L Device:C C34
+L C C34
 U 1 1 5981A678
 P 28300 2500
 F 0 "C34" H 28325 2600 50  0000 L CNN
@@ -440,7 +478,7 @@ DEC3
 Text GLabel 28300 2800 3    60   Input ~ 0
 DGND
 $Comp
-L Johanson:2450FM07A0029 F1
+L 2450FM07A0029 F1
 U 1 1 59836850
 P 27100 4200
 F 0 "F1" H 27100 4200 60  0000 C CNN
@@ -455,7 +493,7 @@ DGND
 Text Label 13050 2500 0    60   ~ 0
 SYS_LOAD
 $Comp
-L Device:C C1
+L C C1
 U 1 1 5A25CEB1
 P 11250 3850
 F 0 "C1" H 11250 3950 40  0000 L CNN
@@ -466,7 +504,7 @@ F 3 "~" H 11250 3850 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L conn1:INDUCTOR L1
+L INDUCTOR L1
 U 1 1 5A2629BB
 P 8650 3550
 F 0 "L1" V 8600 3550 40  0000 C CNN
@@ -477,7 +515,7 @@ F 3 "~" H 8650 3550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C2
+L C C2
 U 1 1 5A2641CB
 P 7800 3250
 F 0 "C2" H 7800 3350 40  0000 L CNN
@@ -494,7 +532,7 @@ SYS_LOAD
 Text Label 9900 4450 0    60   ~ 0
 SYS_LOAD
 $Comp
-L texas_TPS61222:TPS63001 U7
+L TPS63001 U7
 U 1 1 5A304633
 P 9650 3550
 F 0 "U7" H 9650 3550 60  0000 C CNN
@@ -505,7 +543,7 @@ F 3 "" H 9650 3550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L texas_TPS6122x:TPS2294x U1
+L TPS2294x U1
 U 1 1 5A306EF0
 P 3000 1700
 F 0 "U1" H 3000 1700 60  0000 C CNN
@@ -522,7 +560,7 @@ VDD_nRF
 Text GLabel 12000 3250 2    60   Input ~ 0
 DGND
 $Comp
-L conn1:GND-RESCUE-emg_circuit_2_ext_amp #PWR5
+L GND-RESCUE-emg_circuit_2_ext_amp #PWR5
 U 1 1 5A313557
 P 11650 3950
 F 0 "#PWR5" H 11650 3950 30  0001 C CNN
@@ -535,7 +573,7 @@ $EndComp
 Text Label 10850 1600 0    60   ~ 0
 SYS_LOAD
 $Comp
-L Device:C C7
+L C C7
 U 1 1 5A32B18C
 P 3750 1900
 F 0 "C7" H 3750 2000 40  0000 L CNN
@@ -552,7 +590,7 @@ SYS_LOAD
 Text GLabel 1800 2250 2    60   Input ~ 0
 DGND
 $Comp
-L Device:R R9
+L R R9
 U 1 1 5A333F5F
 P 1550 1550
 F 0 "R9" V 1630 1550 50  0000 C CNN
@@ -563,7 +601,7 @@ F 3 "" H 1550 1550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R10
+L R R10
 U 1 1 5A334288
 P 1850 1300
 F 0 "R10" V 1930 1300 50  0000 C CNN
@@ -574,7 +612,7 @@ F 3 "" H 1850 1300 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C6
+L C C6
 U 1 1 5A33478D
 P 1800 1750
 F 0 "C6" H 1800 1850 40  0000 L CNN
@@ -597,7 +635,7 @@ Vout
 Text GLabel 2200 3450 0    60   Input ~ 0
 5V_in_charge
 $Comp
-L bioreactor:MCP73831 U4
+L MCP73831 U4
 U 1 1 5B170649
 P 3400 4200
 F 0 "U4" H 3400 4300 60  0000 C CNN
@@ -608,7 +646,7 @@ F 3 "" H 3400 4200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L C C4
 U 1 1 5B171CA0
 P 2100 3950
 F 0 "C4" H 2150 4050 40  0000 L CNN
@@ -621,7 +659,7 @@ $EndComp
 Text GLabel 1800 3950 0    60   Input ~ 0
 DGND
 $Comp
-L Device:LED D3
+L LED D3
 U 1 1 5B1733AF
 P 4650 3850
 F 0 "D3" H 4650 3950 50  0000 C CNN
@@ -639,7 +677,7 @@ NoConn ~ 3900 4100
 Text Notes 2750 4850 0    60   ~ 0
 Battery Connection
 $Comp
-L Device:C C5
+L C C5
 U 1 1 5B176C6B
 P 2500 4550
 F 0 "C5" H 2550 4650 40  0000 L CNN
@@ -652,7 +690,7 @@ $EndComp
 Text GLabel 2200 4550 0    60   Input ~ 0
 DGND
 $Comp
-L Device:R R1
+L R R1
 U 1 1 5B177325
 P 4150 3950
 F 0 "R1" V 4230 3950 50  0000 C CNN
@@ -665,7 +703,7 @@ $EndComp
 Text GLabel 2700 6800 2    60   Input ~ 0
 5V_in_charge
 $Comp
-L conn1:CONN_2 P3
+L CONN_2 P3
 U 1 1 5B17FD5C
 P 2000 8400
 F 0 "P3" V 1950 8400 40  0000 C CNN
@@ -676,7 +714,7 @@ F 3 "" H 2000 8400 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L conn1:GND-RESCUE-emg_circuit_2_ext_amp #PWR2
+L GND-RESCUE-emg_circuit_2_ext_amp #PWR2
 U 1 1 5B180337
 P 2750 8700
 F 0 "#PWR2" H 2750 8700 30  0001 C CNN
@@ -691,7 +729,7 @@ Battery Connection
 Text Label 3350 8300 0    60   ~ 0
 SYS_LOAD
 $Comp
-L power:VCC #PWR3
+L VCC #PWR3
 U 1 1 5B180893
 P 3250 8250
 F 0 "#PWR3" H 3250 8350 30  0001 C CNN
@@ -726,7 +764,7 @@ LED1
 Text Label 3550 1500 0    60   ~ 0
 Vin
 $Comp
-L bioreactor:ADG1606 MUX1
+L ADG1606 MUX1
 U 1 1 5B1AE8B8
 P 7450 7150
 F 0 "MUX1" H 7450 7150 60  0000 C CNN
@@ -748,7 +786,7 @@ AVSS
 Text GLabel 6400 6650 1    60   Input ~ 0
 AVSS
 $Comp
-L Device:C C8
+L C C8
 U 1 1 5B1B1E3B
 P 8700 6650
 F 0 "C8" H 8750 6750 40  0000 L CNN
@@ -759,7 +797,7 @@ F 3 "~" H 8700 6650 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L nrf52_sensor_array-rescue:CONN_01X08 J1
+L CONN_01X08 J1
 U 1 1 5B1B3F76
 P 7450 5700
 F 0 "J1" H 7450 6150 50  0000 C CNN
@@ -770,7 +808,7 @@ F 3 "" H 7450 5700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L nrf52_sensor_array-rescue:CONN_01X08 J2
+L CONN_01X08 J2
 U 1 1 5B1B74E5
 P 7450 8500
 F 0 "J2" H 7450 8950 50  0000 C CNN
@@ -795,7 +833,7 @@ ctr_m1_a1
 Text Label 24650 6300 0    60   ~ 0
 ctr_m1_a0
 $Comp
-L bioreactor:ADS1220 U5
+L ADS1220 U5
 U 1 1 5B1C4306
 P 11600 7200
 F 0 "U5" H 11600 7300 60  0000 C CNN
@@ -824,7 +862,7 @@ SPI_SCLK
 Text GLabel 13350 6500 1    60   Input ~ 0
 DVDD
 $Comp
-L Device:C C10
+L C C10
 U 1 1 5B1CA64A
 P 13650 6800
 F 0 "C10" H 13650 6900 40  0000 L CNN
@@ -835,7 +873,7 @@ F 3 "~" H 13650 6800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C9
+L C C9
 U 1 1 5B1CAD5E
 P 13350 7550
 F 0 "C9" H 13350 7650 40  0000 L CNN
@@ -874,7 +912,7 @@ AVSS
 Text GLabel 8500 9850 1    60   Input ~ 0
 AVDD
 $Comp
-L bioreactor:ADG1606 MUX2
+L ADG1606 MUX2
 U 1 1 5B1D6800
 P 7450 10700
 F 0 "MUX2" H 7450 10700 60  0000 C CNN
@@ -896,7 +934,7 @@ AVSS
 Text GLabel 6400 10200 1    60   Input ~ 0
 AVSS
 $Comp
-L Device:C C11
+L C C11
 U 1 1 5B1D680E
 P 8700 10200
 F 0 "C11" H 8750 10300 40  0000 L CNN
@@ -907,7 +945,7 @@ F 3 "~" H 8700 10200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L nrf52_sensor_array-rescue:CONN_01X08 J3
+L CONN_01X08 J3
 U 1 1 5B1D6814
 P 7450 9250
 F 0 "J3" H 7450 9700 50  0000 C CNN
@@ -918,7 +956,7 @@ F 3 "" H 7450 9250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L nrf52_sensor_array-rescue:CONN_01X08 J4
+L CONN_01X08 J4
 U 1 1 5B1D681A
 P 7450 12050
 F 0 "J4" H 7450 12500 50  0000 C CNN
@@ -947,7 +985,7 @@ AVSS
 Text GLabel 12350 10050 1    60   Input ~ 0
 AVDD
 $Comp
-L bioreactor:ADG1606 MUX3
+L ADG1606 MUX3
 U 1 1 5B1D6E24
 P 11300 10900
 F 0 "MUX3" H 11300 10900 60  0000 C CNN
@@ -969,7 +1007,7 @@ AVSS
 Text GLabel 10250 10400 1    60   Input ~ 0
 AVSS
 $Comp
-L Device:C C12
+L C C12
 U 1 1 5B1D6E32
 P 12550 10400
 F 0 "C12" H 12600 10500 40  0000 L CNN
@@ -980,7 +1018,7 @@ F 3 "~" H 12550 10400 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L nrf52_sensor_array-rescue:CONN_01X08 J5
+L CONN_01X08 J5
 U 1 1 5B1D6E38
 P 11300 9450
 F 0 "J5" H 11300 9900 50  0000 C CNN
@@ -991,7 +1029,7 @@ F 3 "" H 11300 9450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L nrf52_sensor_array-rescue:CONN_01X08 J6
+L CONN_01X08 J6
 U 1 1 5B1D6E3E
 P 11300 12250
 F 0 "J6" H 11300 12700 50  0000 C CNN
@@ -1006,7 +1044,7 @@ NoConn ~ 10500 10850
 Text GLabel 10150 11250 0    60   Input ~ 0
 AVDD
 $Comp
-L conn1:CONN_2 P4
+L CONN_2 P4
 U 1 1 5B1D9853
 P 14950 8800
 F 0 "P4" V 14900 8800 40  0000 C CNN
@@ -1023,7 +1061,7 @@ meas_REFERENCE
 Text GLabel 16850 9150 2    60   Input ~ 0
 AVSS
 $Comp
-L conn1:CONN_2 P5
+L CONN_2 P5
 U 1 1 5B1EBE6E
 P 4000 6950
 F 0 "P5" V 3950 6950 40  0000 C CNN
@@ -1038,7 +1076,7 @@ DVDD
 Text GLabel 4650 7050 2    60   Input ~ 0
 DGND
 $Comp
-L Device:R R2
+L R R2
 U 1 1 5B1F2F7B
 P 12700 11050
 F 0 "R2" V 12780 11050 50  0000 C CNN
@@ -1068,9 +1106,9 @@ Connection ~ 1800 2050
 Wire Wire Line
 	1550 2050 1550 1700
 Wire Wire Line
-	1800 1900 1800 2050
+	1800 1900 1800 2250
 Wire Wire Line
-	1550 2050 1800 2050
+	1550 2050 2000 2050
 Wire Wire Line
 	2000 2050 2000 1700
 Wire Wire Line
@@ -1078,11 +1116,11 @@ Wire Wire Line
 Wire Wire Line
 	1800 1500 1800 1600
 Wire Wire Line
-	1800 1500 2150 1500
+	1800 1500 2500 1500
 Wire Wire Line
 	1550 1300 1700 1300
 Wire Wire Line
-	1550 1050 1550 1300
+	1550 1050 1550 1400
 Wire Wire Line
 	3750 2050 3750 2400
 Wire Wire Line
@@ -1092,7 +1130,7 @@ Wire Wire Line
 	4200 1500 4200 1750
 Connection ~ 3750 1500
 Wire Wire Line
-	3500 1500 3750 1500
+	3500 1500 4450 1500
 Wire Wire Line
 	3750 1750 3750 1500
 Wire Wire Line
@@ -1113,14 +1151,14 @@ Connection ~ 11650 3850
 Connection ~ 11650 3250
 Connection ~ 10800 3250
 Wire Wire Line
-	10500 3250 10800 3250
+	10500 3250 12000 3250
 Wire Wire Line
-	11650 3250 11650 3850
+	11650 3250 11650 3950
 Wire Wire Line
 	11400 3850 11650 3850
 Connection ~ 10800 3850
 Wire Wire Line
-	10500 3850 10800 3850
+	10500 3850 11100 3850
 Connection ~ 10800 4100
 Wire Wire Line
 	10800 4450 8600 4450
@@ -1131,7 +1169,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 4100 10500 4100
 Wire Wire Line
-	10800 3550 10800 3850
+	10800 3550 10800 4450
 Wire Wire Line
 	10800 3550 10500 3550
 Connection ~ 8350 3000
@@ -1144,24 +1182,24 @@ Wire Wire Line
 Wire Wire Line
 	10700 3000 10500 3000
 Wire Wire Line
-	7450 3000 7800 3000
+	7450 3000 8800 3000
 Connection ~ 9650 2500
 Wire Wire Line
 	10800 2500 10800 3250
 Wire Wire Line
 	9650 2500 9650 2700
 Wire Wire Line
-	8450 2500 9650 2500
+	8450 2500 10800 2500
 Wire Wire Line
 	8450 3550 8450 2500
 Wire Wire Line
-	7800 3550 8450 3550
+	7800 3550 8800 3550
 Wire Wire Line
 	29800 3950 29800 4000
 Wire Wire Line
 	27900 4000 28700 4000
 Wire Wire Line
-	29000 4000 29100 4000
+	29000 4000 29150 4000
 Wire Wire Line
 	29100 4000 29100 4050
 Wire Wire Line
@@ -1200,9 +1238,9 @@ Wire Wire Line
 Wire Wire Line
 	13800 2950 13800 2500
 Wire Wire Line
-	13050 2500 13400 2500
+	13050 2500 16800 2500
 Wire Wire Line
-	16800 2500 16800 2950
+	16800 2500 16800 3350
 Wire Wire Line
 	16800 3350 16450 3350
 Wire Wire Line
@@ -1215,7 +1253,7 @@ Connection ~ 13400 2500
 Wire Wire Line
 	13400 2950 13400 3250
 Wire Wire Line
-	15550 3750 15750 3750
+	15550 3750 17150 3750
 Wire Wire Line
 	16500 4000 16500 3750
 Connection ~ 16500 3750
@@ -1234,11 +1272,13 @@ Wire Wire Line
 Connection ~ 15750 3750
 Wire Notes Line
 	18550 5300 18550 1100
+Wire Notes Line
+	18550 1100 6800 1100
 Wire Wire Line
 	10000 1350 10000 1600
 Connection ~ 13900 3750
 Wire Wire Line
-	13650 3750 13900 3750
+	13650 3750 14350 3750
 Wire Wire Line
 	23400 5700 23400 6300
 Wire Wire Line
@@ -1252,13 +1292,15 @@ Wire Notes Line
 Wire Notes Line
 	12100 2150 12100 1100
 Wire Notes Line
+	12100 1100 9900 1100
+Wire Notes Line
 	6800 5300 18550 5300
 Wire Wire Line
 	23900 5700 23900 6300
 Wire Wire Line
 	25050 4400 26200 4400
 Wire Wire Line
-	26200 4400 26200 4450
+	26200 4400 26200 4650
 Wire Wire Line
 	26200 4450 26300 4450
 Wire Wire Line
@@ -1273,12 +1315,12 @@ Wire Wire Line
 Wire Wire Line
 	25800 4000 26300 4000
 Wire Wire Line
-	21650 4000 22050 4000
+	21650 4000 22650 4000
 Connection ~ 22050 4000
 Wire Wire Line
 	21350 4250 21200 4250
 Wire Wire Line
-	21200 4000 21200 4250
+	21200 4000 21200 4350
 Wire Wire Line
 	21200 4000 21350 4000
 Connection ~ 21200 4250
@@ -1287,7 +1329,7 @@ Wire Wire Line
 Wire Wire Line
 	22350 4100 22350 4300
 Wire Wire Line
-	22350 4300 22050 4300
+	22350 4300 21700 4300
 Wire Wire Line
 	21700 4300 21700 4250
 Wire Wire Line
@@ -1304,7 +1346,7 @@ Wire Wire Line
 Wire Wire Line
 	25250 4100 25050 4100
 Wire Wire Line
-	25250 3300 25250 3750
+	25250 3300 25250 4100
 Wire Wire Line
 	25250 3750 25350 3750
 Wire Wire Line
@@ -1316,7 +1358,7 @@ Wire Wire Line
 	25700 3550 25700 3300
 Connection ~ 25700 3300
 Wire Wire Line
-	25600 3300 25700 3300
+	25600 3300 26500 3300
 Wire Wire Line
 	25500 3950 25500 4100
 Wire Wire Line
@@ -1324,7 +1366,7 @@ Wire Wire Line
 Wire Wire Line
 	25700 4000 25700 3750
 Wire Wire Line
-	25650 3750 25700 3750
+	25650 3750 25800 3750
 Connection ~ 25700 3750
 Wire Wire Line
 	26100 3750 26250 3750
@@ -1396,16 +1438,16 @@ Wire Wire Line
 Wire Wire Line
 	24400 5700 24400 6300
 Wire Wire Line
-	2250 3950 2450 3950
+	2250 3950 2900 3950
 Wire Wire Line
-	2450 3450 2450 3950
+	2450 3450 2450 4100
 Wire Wire Line
 	2450 3450 2200 3450
 Connection ~ 2450 3950
 Wire Wire Line
 	2900 4300 2750 4300
 Wire Wire Line
-	2750 4300 2750 4450
+	2750 4300 2750 4750
 Wire Wire Line
 	2750 4450 2900 4450
 Connection ~ 2750 4450
@@ -1418,9 +1460,9 @@ Wire Wire Line
 Wire Wire Line
 	4650 3400 4650 3700
 Wire Wire Line
-	3900 4200 4100 4200
+	3900 4200 4200 4200
 Wire Wire Line
-	4100 4100 4100 4200
+	4100 4100 4100 4300
 Wire Wire Line
 	4100 4300 3900 4300
 Connection ~ 4100 4200
@@ -1438,7 +1480,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 4100 4100 4100
 Wire Wire Line
-	2350 8300 3250 8300
+	2350 8300 3350 8300
 Wire Wire Line
 	2350 8500 2750 8500
 Wire Wire Line
@@ -1561,7 +1603,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 6900 8250 6900
 Wire Wire Line
-	8500 6300 8500 6650
+	8500 6300 8500 6900
 Connection ~ 8500 6650
 Wire Wire Line
 	8550 6650 8500 6650
@@ -1618,20 +1660,20 @@ Wire Wire Line
 Wire Wire Line
 	10800 6800 10250 6800
 Wire Wire Line
-	10150 6900 10250 6900
+	10150 6900 10800 6900
 Wire Wire Line
-	10250 6800 10250 6900
+	10250 6800 10250 7100
 Connection ~ 10250 6900
 Wire Wire Line
 	10250 7100 10800 7100
 Wire Wire Line
 	10800 7300 10250 7300
 Wire Wire Line
-	12400 7300 13350 7300
+	12400 7300 13500 7300
 Wire Wire Line
 	12400 7100 13350 7100
 Wire Wire Line
-	13350 7100 13350 6800
+	13350 7100 13350 6500
 Wire Wire Line
 	12400 6900 12950 6900
 Wire Wire Line
@@ -1693,7 +1735,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 10450 8250 10450
 Wire Wire Line
-	8500 9850 8500 10200
+	8500 9850 8500 10450
 Connection ~ 8500 10200
 Wire Wire Line
 	8550 10200 8500 10200
@@ -1746,7 +1788,7 @@ Wire Wire Line
 Wire Wire Line
 	8250 10650 8750 10650
 Wire Wire Line
-	12100 11250 12450 11250
+	12100 11250 12700 11250
 Wire Wire Line
 	12450 11250 12450 11350
 Wire Wire Line
@@ -1758,7 +1800,7 @@ Wire Wire Line
 Wire Wire Line
 	12350 10650 12100 10650
 Wire Wire Line
-	12350 10050 12350 10400
+	12350 10050 12350 10650
 Connection ~ 12350 10400
 Wire Wire Line
 	12400 10400 12350 10400
@@ -1809,19 +1851,19 @@ Wire Wire Line
 Wire Wire Line
 	10500 11250 10150 11250
 Wire Wire Line
-	12100 10850 12700 10850
+	12100 10850 12850 10850
 Wire Wire Line
-	15300 8700 16000 8700
+	15300 8700 16450 8700
 Wire Wire Line
 	16450 8700 16450 8650
 Wire Wire Line
-	15300 8900 16150 8900
+	15300 8900 16450 8900
 Wire Wire Line
 	16450 8900 16450 8850
 Wire Wire Line
 	16000 8700 16000 9150
 Wire Wire Line
-	16000 9150 16150 9150
+	16000 9150 16850 9150
 Connection ~ 16000 8700
 Wire Wire Line
 	16150 8900 16150 9150
@@ -1843,106 +1885,4 @@ Text Notes 12750 11250 0    60   ~ 0
 Voltage divider
 Text Notes 12400 10750 0    60   ~ 0
 From Temp sensors
-Wire Wire Line
-	1550 1300 1550 1400
-Wire Wire Line
-	2150 1500 2500 1500
-Wire Wire Line
-	1800 2050 1800 2250
-Wire Wire Line
-	1800 2050 2000 2050
-Wire Wire Line
-	4200 1500 4450 1500
-Wire Wire Line
-	3750 1500 4200 1500
-Wire Wire Line
-	7800 3000 8350 3000
-Wire Wire Line
-	8450 3550 8800 3550
-Wire Wire Line
-	11650 3850 11650 3950
-Wire Wire Line
-	11650 3250 12000 3250
-Wire Wire Line
-	10800 3250 11650 3250
-Wire Wire Line
-	10800 3850 11100 3850
-Wire Wire Line
-	10800 3850 10800 4100
-Wire Wire Line
-	10800 4100 10800 4450
-Wire Wire Line
-	8350 3000 8800 3000
-Wire Wire Line
-	9650 2500 10800 2500
-Wire Wire Line
-	29100 4000 29150 4000
-Wire Wire Line
-	16800 2950 16800 3350
-Wire Wire Line
-	13800 2500 16800 2500
-Wire Wire Line
-	13400 2500 13800 2500
-Wire Wire Line
-	16500 3750 17150 3750
-Wire Wire Line
-	15750 3750 16500 3750
-Wire Wire Line
-	13900 3750 14350 3750
-Wire Wire Line
-	26200 4450 26200 4650
-Wire Wire Line
-	22050 4000 22650 4000
-Wire Wire Line
-	21200 4250 21200 4350
-Wire Wire Line
-	22050 4300 21700 4300
-Wire Wire Line
-	25250 3750 25250 4100
-Wire Wire Line
-	25700 3300 26250 3300
-Wire Wire Line
-	25700 3750 25800 3750
-Wire Wire Line
-	26250 3300 26500 3300
-Wire Wire Line
-	2450 3950 2900 3950
-Wire Wire Line
-	2450 3950 2450 4100
-Wire Wire Line
-	2750 4450 2750 4550
-Wire Wire Line
-	4100 4200 4200 4200
-Wire Wire Line
-	4100 4200 4100 4300
-Wire Wire Line
-	2750 4550 2750 4750
-Wire Wire Line
-	3250 8300 3350 8300
-Wire Wire Line
-	8500 6650 8500 6900
-Wire Wire Line
-	10250 6900 10800 6900
-Wire Wire Line
-	10250 6900 10250 7100
-Wire Wire Line
-	13350 7300 13500 7300
-Wire Wire Line
-	13350 6800 13350 6500
-Wire Wire Line
-	8500 10200 8500 10450
-Wire Wire Line
-	12350 10400 12350 10650
-Wire Wire Line
-	16000 8700 16450 8700
-Wire Wire Line
-	16150 8900 16450 8900
-Wire Wire Line
-	16150 9150 16850 9150
-Wire Wire Line
-	12450 11250 12700 11250
-Wire Wire Line
-	12700 10850 12850 10850
-Wire Notes Line
-	6800 1100 18550 1100
 $EndSCHEMATC
